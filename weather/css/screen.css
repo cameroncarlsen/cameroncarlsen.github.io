@@ -23,10 +23,33 @@ body{
     font-size: 18px;
 }
 
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+header p {
+    font-size: 2em;
+    font-weight: 600;
+}
+
 
 /* 2. Mobile */
 
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
 
+footer{
+    margin-bottom: 2em;
+}
+
+.logo{
+    height: 500px;
+    width: 500px;
+}
 
 
 /* 3. Screen */
