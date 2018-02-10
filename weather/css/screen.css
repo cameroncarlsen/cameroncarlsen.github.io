@@ -1,0 +1,32 @@
+/*CSS file for the wether site*/
+
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+@import url('normalize.css')
+/*
+1. General Rules
+2. Mobile
+3. Screen
+*/
+
+
+
+/* 1. General Rules */
+{
+    box-sizing: border-box;
+}
+*:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: helvetica arial sans-serif;
+    font-size: 18px;
+}
+
+
+/* 2. Mobile */
+
+
+
+
+/* 3. Screen */
