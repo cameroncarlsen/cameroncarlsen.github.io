@@ -10,10 +10,7 @@
 
     <body>
         <header id="page-header">
-            <div id="logo">
-            <img src="images/logo.jpeg" alt="Weather Site Logo">
-            </div>
-            <p id="sitebrand">Weather Site</p>
+            <p id="sitebrand">&#9748; Weather Site</p>
         </header>
 
         <section id="navigation">
@@ -40,29 +37,74 @@
 
 
         <main>
-            <section id="locationInfo">
-            <h2>Franklin, Idaho</h2>
-            <p>Zip: 83237 <br> Elevation: 4501 ft. <br>Location: 42.0135&deg; N,111.8072&deg; W</p>
+            <h1>Franklin, Idaho</h1>
 
-            <h3>Temperature</h3>
+                <section id="locationInfo">
+                    <p><b>Zip:</b> 83237 | <b>Elevation:</b> 4501 ft. | <b>Location:</b> 42.0135&deg; N,111.8072&deg; W</p>
+                </section>
 
-            <h3>24&deg;F</h3>
-            <p>34F 21F<br> Feels like 21F</p>
+            <div id="curWeather">
+                <div id="smallConditions">
 
-            <h3>Wind</h3>
-            <p>N <br>2 mph <br>
-                <b>Direction</b>: NW<br>
-                <b>Gusts</b>: 5mph</p>
+                    <section id="temps">
+                    <h2>Temperature</h2>
+                    <p id="current-temp"><strong>24&deg;F</strong></p>
+                    <p id="high-temp">34&deg;F</p>
+                    <p id="low-temp">21&deg;F</p>
+                    <p id="feels-like">Feels like 21&deg;F</p>
+                </section>
 
-            <h3>Video Forecast</h3>
 
+                <section id="wind">
+                    <h2 id="wind-head">Wind</h2>
+                    <p id="fixed-N">N</p>
+                    <div id="dial" class="nw">
+                    </div>
+                    <div id="wind-info">
+                        <p id="wind-speed">2 mph</p>
+                        <p id="wind-direction"><b>Direction:</b> NW</p>
+                        <p id="wind-gust"><b>Gusts:</b> 5mph</p>
+                    </div>
+                </section>
+                </div>
 
+                <section id="video">
+                    <h2>Video Forecast</h2>
+                    <div id="video-icon">
+                        <img src=/weather/images/video.png alt="video player icon">
+                    </div>
+                </section>
+                </div>
 
-            <h3>Hourly Forecast</h3>
-            <p>
-                12am: 21F | 1am: 21F | 2am: 21F | 3am: 20F | 4am: 20F | 5am: 20F | 6am: 20F | 7am: 21F | 8am: 21F
-            </p>
-            </section>
+                <section id="hourly">
+                <h3>Hourly Forecast</h3>
+                    <ul id="hourly-list">
+                        <li>12 AM: 21</li>
+                        <li>1 AM: 21</li>
+                        <li>2 AM: 20</li>
+                        <li>3 AM: 20</li>
+                        <li>4 AM: 20</li>
+                        <li>5 AM: 20</li>
+                        <li>6 AM: 20</li>
+                        <li>7 AM: 21</li>
+                        <li>8 AM: 25</li>
+                        <li>9 AM: 28</li>
+                        <li>10 AM: 30</li>
+                        <li>11 AM: 34</li>
+                        <li>12 PM: 35</li>
+                        <li>1 PM: 37</li>
+                        <li>2 PM: 38</li>
+                        <li>3 PM: 39</li>
+                        <li>4 PM: 39</li>
+                        <li>5 PM: 38</li>
+                        <li>6 PM: 36</li>
+                        <li>7 PM: 34</li>
+                        <li>8 PM: 33</li>
+                        <li>9 PM: 33</li>
+                        <li>10 PM: 31</li>
+                        <li>11 PM: 31</li>
+                    </ul>
+                </section>
         </main>
 <footer>
  &copy;2017 Weather Site

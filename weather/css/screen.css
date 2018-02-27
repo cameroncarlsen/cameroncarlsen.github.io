@@ -20,36 +20,201 @@
 
 body{
     font-family: helvetica arial sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-nav ul li {
-    display: inline-block;
-    list-style: none;
-}
 
-header p {
-    font-size: 2em;
-    font-weight: 600;
+
+logo {
+  font-size: 500px;
 }
 
 
 /* 2. Mobile */
 
+h1 {
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 7px;
+    font-size: 33px;
+}
+
+
+#locationInfo {
+    width: 100vw;
+    display: flex;
+    font-size: 3.1vw;
+    padding-left: 7px;
+}
+
+#curWeather {
+    background-image: url("/weather/images/sunny-winter.jpg");
+    background-size: cover;
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    border: 1px solid;
+}
+
+#smallConditions {
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+    display: flex;
+    padding: .1em;
+}
+
+#temps {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65vw;
+}
+
+#current-temp {
+    font-size: 4em;
+    margin: 0;
+    padding-left: 17px;
+}
+
+#high-temp {
+    color: red;
+    margin: 0;
+    padding-left: 40px;
+}
+
+#low-temp {
+    color: blue;
+    margin: 0;
+    padding-left: 25px;
+}
+
+#feels-like {
+    margin: 0;
+    padding-left: 30px;
+
+}
+
+#wind {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    text-align: center;
+}
+
+#fixed-N {
+    font-size: smaller;
+    margin: 0;
+}
+
+#dial {
+    height: 150px;
+    width: 150px;
+    background: no-repeat center/85% url('/weather/images/wind-pointer.png');
+    margin: -.6em auto 0;
+    z-index: 100;
+}
+
+#wind-speed {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    right: 0px;
+    left: 0px;
+}
+
+#wind-direction {
+    font-size: .8em;
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+#wind-gust {
+    font-size: .8em;
+    margin: 0;
+}
+
+#video {
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+#video-icon {
+    width: 50vw;
+    height: auto;
+    margin: .1vw 0 .1vw 25vw;
+    padding: .5vw 0 .2vw 0;
+}
+
+
 nav {
     position: fixed;
     bottom: 0;
     left: 0;
+    background-color: #0e89d5;
+    width: 100vw;
+    font-size: 4vw;
+}
+
+nav ul li {
+    list-style: none;
+    color: #FFF;
+    padding: .75em;
+    display: block;
+    font-size: 13px;
+    height: 40px;
+}
+
+#navigation ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+
+#page-header {
+    background-color: #0e89d5;
+    display: flex;
+    align-content: flex-start;
+}
+
+
+
+#sitebrand {
+    font-size: 1.5em;
+    font-weight: 600;
+
+}
+
+#hourly-list {
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    align-items: center;
+    padding: .15em;
+    margin: .25em 0;
+    height: 40px;
+}
+
+#hourly-list li {
+    display: flex;
+    list-style: none;
+    flex: 0 0 auto;
+    padding: 0 .25em;
+    border-right: 1px solid #000;
 }
 
 footer{
     margin-bottom: 2em;
 }
 
-.logo{
-    height: 500px;
-    width: 500px;
-}
+
 
 
 /* 3. Screen */
