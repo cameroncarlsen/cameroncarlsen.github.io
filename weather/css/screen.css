@@ -36,6 +36,37 @@ h6 {
     font-family: Sansita, arial, sans-serif;
 }
 
+n {
+    transform: rotate(0deg);
+}
+
+.ne {
+    transform: rotate(45deg);
+}
+
+.e {
+    transform: rotate(90deg);
+}
+
+.se {
+    transform: rotate(135deg);
+}
+
+.s {
+    transform: rotate(180deg);
+}
+
+.sw {
+    transform: rotate(225deg);
+}
+
+.w {
+    transform: rotate(270deg);
+}
+
+.nw {
+    transform: rotate(315deg);
+}
 
 
 /*---------2. Mobile----------*/
@@ -100,12 +131,31 @@ h2 {
 }
 
 #curWeather {
-    background-image: url("/weather/images/sunny-winter.jpg");
     background-size: cover;
     background-color: rgba(200, 200, 200, .6);
     margin: .2em auto;
     border: 1px solid;
     display:
+}
+
+.clear {
+    background-image: url("/weather_images/clear400.jpg");
+}
+
+.rain {
+    background-image: url("/weather_images/rain400.jpg");
+}
+
+.cloud {
+    background-image: url("/weather_images/clouds400.jpg");
+}
+
+.snow {
+    background-image: url("/weather_images/snow400.jpg");
+}
+
+.fog {
+    background-image: url("/weather_images/fog400.jpg");
 }
 
 #smallConditions {
@@ -276,6 +326,27 @@ h1 {
     padding: 1em 0;
     width: auto;
 }
+
+.clear {
+    background-image: url("/weather_images/clear500.jpg");
+}
+
+.rain {
+    background-image: url("/weather_images/rain500.jpg");
+}
+
+.cloud {
+    background-image: url("/weather_images/clouds500.jpg");
+}
+
+.snow {
+    background-image: url("/weather_images/snow500.jpg");
+}
+
+.fog {
+    background-image: url("/weather_images/fog500.jpg");
+}
+
 
 #smallConditions {
     background-color: transparent;
