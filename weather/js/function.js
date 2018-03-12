@@ -6,42 +6,42 @@ const temp = 31;
 const speed = 5;
 buildWC(speed, temp);
 
-const direction = "WSW"; //Change this value to test it
+const direction = "WSW";
 windDial(direction);
 
 
-// Calculate the Windchill
+// Calculate
 function buildWC(speed, temp) {
     const feelTemp = document.getElementById('feels-like');
 
-    //Compute wind chill
+    //Compute
     let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
     console.log(wc);
 
-    // Round the answer down to integer
+    // Round
     wc = Math.floor(wc);
 
-    // If chill is greater than temp, return the temp
+
     wc = (wc > temp) ? temp : wc;
 
-    // Display the windchill
+    // Display windchill
     console.log(wc);
     wc = 'Feels like ' + wc + '&deg;F';
     feelTemp.innerHTML = wc;
 }
 
 
-// Wind Dial Function
+
 function windDial(direction) {
-    // Get the wind dial container
+
     const dial = document.getElementById("dial");
     console.log(direction);
 
-    // Determine the dial class
+
     switch (direction) {
         case "North":
         case "N":
-            dial.setAttribute("class", "n"); //"n" is the CSS rule selector
+            dial.setAttribute("class", "n");
             break;
 
         case "NE":
@@ -85,14 +85,13 @@ function windDial(direction) {
     }
 }
 
-//Variables to use in background image functions
-const CURWEATHER = "raining"; //change this to test
+
+const CURWEATHER = "raining";
 let weatherImage = getCondition(CURWEATHER);
 
 changeSummaryImage(weatherImage);
 
-//javascript function that will change all of it to lowercase so you don't need to check for upper or lower case
-//do two or three tests for each image (rain, clouds, clear, snow, fog)
+
 
 function getCondition(CURWEATHER) {
     if (CURWEATHER.includes("cloud") || CURWEATHER.includes("overcast")) {
@@ -117,11 +116,11 @@ function getCondition(CURWEATHER) {
 }
 
 function changeSummaryImage(weatherImage) {
-    // Get the background image container
+    // Get image
     const summaryImage = document.getElementById("curWeather");
     console.log(weatherImage);
 
-    //switch statements to set class
+
     switch (weatherImage) {
         case "cloud":
             summaryImage.setAttribute("class", "cloud");
