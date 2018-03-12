@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 @import url('normalize.css')
+
+
 /*
 1. General Rules
 2. Mobile
@@ -10,11 +12,13 @@
 
 
 
-/* 1. General Rules */
+/*----------1. General Rules----------*/
 {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
-*:before, *:after{
+*:before,
+*:after
+{
     box-sizing: border-box;
 }
 
@@ -23,14 +27,25 @@ body{
     font-size: 20px;
 }
 
-
-
-logo {
-  font-size: 500px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Sansita, arial, sans-serif;
 }
 
 
-/* 2. Mobile */
+
+/*---------2. Mobile----------*/
+
+#logo {
+    font-size: 1.75em;
+}
+
+
+
 
 h1 {
     margin: 0;
@@ -53,6 +68,7 @@ h1 {
     background-color: rgba(200, 200, 200, .6);
     margin: .2em auto;
     border: 1px solid;
+    display:
 }
 
 #smallConditions {
@@ -217,4 +233,4 @@ footer{
 
 
 
-/* 3. Screen */
+/*----------3. Screen---------*/
