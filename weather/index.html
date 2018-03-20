@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title id="page-title">Current Weather </title>
+        <meta name="description" content="This page shows info of current weather.">
+        <meta name="viewport" content="width=device-width">
+        <link href="/weather/css/screen.css" rel="stylesheet" type="text/css" media="screen">
+    </head>
+
+    <body>
+        <header id="page-header">
+            <div id="logo">&#9748;</div>
+            <h1 id="site-brand"> Weather Site</h1>
+        </header>
+
+        <section id="navigation">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://cameroncarlsen.github.io/">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://cameroncarlsen.github.io/weather/wplan.html">Weather Plan</a>
+                    </li>
+                    <li>
+                        <a href="https://cameroncarlsen.github.io/weather/fweather.html">Franklin Page</a>
+                    </li>
+                    <li>
+                        Springfield
+                    </li>
+                    <li>
+                        <a href="https://cameroncarlsen.github.io/weather/gweather.html">Greenville</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <p id="status">Getting Location...</p>
+        <main id="hideUnhide" class="hide">
+            <h1 id="cityState">Current Location</h1>
+
+            <section id="locationInfo">
+                <p><b>Zip:</b> <span id="zip"></span> | <b>Elevation:</b> <span id="elevation"></span> | <b>Location:</b> <span id="location"></span></p>
+            </section>
+
+            <div id="curWeather" class="clear">
+                <div id="smallConditions">
+
+                    <section id="temps">
+                        <h2>Temperature</h2>
+                        <p id="current-temp"><strong></strong></p>
+                        <p id="high-temp"></p>
+                        <p id="low-temp"></p>
+                        <p id="feels-like"></p>
+                    </section>
+
+
+                    <section id="wind">
+                        <h2 id="wind-head">Wind</h2>
+                        <p id="fixed-N">N</p>
+                        <div id="dial" class="n">
+                        </div>
+                        <div id="wind-info">
+                            <p id="wind-speed"></p>
+                            <p id="wind-direction"><b>Direction:</b> <span id="directionLabel"></span></p>
+                            <p id="wind-gust"><b>Gusts:</b> <span id="gust"></span></p>
+                        </div>
+                    </section>
+                </div>
+
+                <section id="video">
+                    <h2 id="condition">Video</h2>
+                    <div id="video-icon">
+                        <img id="condition-icon" src="/weather/images/clear.jpg" alt="video player icon">
+                    </div>
+                </section>
+            </div>
+
+            <section id="hourly">
+                <h2>Hourly Forecast</h2>
+                <ul id="hourly-list">
+                    <li>12am: <span id="zero"></span></li>
+                    <li>1am: <span id="one"></span></li>
+                    <li>2am: <span id="two"></span></li>
+                    <li>3am: <span id="three"></span></li>
+                    <li>4am: <span id="four"></span></li>
+                    <li>5am: <span id="five"></span></li>
+                    <li>6am: <span id="six"></span></li>
+                    <li>7am: <span id="seven"></span></li>
+                    <li>8am: <span id="eight"></span></li>
+                    <li>9am: <span id="nine"></span></li>
+                    <li>10am: <span id="ten"></span></li>
+                    <li>11am: <span id="eleven"></span></li>
+                    <li>12pm: <span id="twelve"></span></li>
+                    <li>1pm: <span id="thirteen"></span></li>
+                    <li>2pm: <span id="fourteen"></span></li>
+                    <li>3pm: <span id="fifteen"></span></li>
+                    <li>4pm: <span id="sixteen"></span></li>
+                    <li>5pm: <span id="seventeen"></span></li>
+                    <li>6pm: <span id="eighteen"></span></li>
+                    <li>7pm: <span id="nineteen"></span></li>
+                    <li>8pm: <span id="twenty"></span></li>
+                    <li>9pm: <span id="twentyone"></span></li>
+                    <li>10pm: <span id="twentytwo"></span></li>
+                    <li>11pm: <span id="twentythree"></span></li>
+                </ul>
+                <!--   <div id="arrow">&rsaquo;</div>-->
+            </section>
+        </main>
+        <footer>
+            &copy;2017 Weather Site
+
+        </footer>
+        <script src="/weather/js/function.js"></script>
+    </body>
+</html>
