@@ -2,8 +2,8 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <title id="page-title">Current Weather </title>
-        <meta name="description" content="This page shows info of current weather.">
+        <title id="page-title">Search </title>
+        <meta name="description" content="This page searches.">
         <meta name="viewport" content="width=device-width">
         <link href="/weather/css/screen.css" rel="stylesheet" type="text/css" media="screen">
     </head>
@@ -42,7 +42,16 @@
             </nav>
         </section>
 
-        <p id="status">Getting Location...</p>
+        <p id="status"></p>
+
+        <section>
+            <form method="get" action="https://wunderground.com/" id="searchform">
+                <input type="search" name="query" id="query">
+                <input type="submit" name="submit" value="Search" id="send">
+            </form>
+            <div id="searchResults"></div>
+        </section>
+
         <main id="hideUnhide" class="hide">
             <h1 id="cityState">Current Location</h1>
 
@@ -119,7 +128,7 @@
 
         </footer>
         <script src="/weather/js/function.js"></script>
-        <script src="/weather/js/geo_loc.js"></script>
+        <script src="/weather/js/search.js"></script>
 
     </body>
 </html>
